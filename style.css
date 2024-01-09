@@ -124,7 +124,8 @@ p {
   }
   .viewMoreContent {
     display: flex;
-    margin: 10rem 0;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
     gap: 2rem;
     justify-content: flex-start;
   }
