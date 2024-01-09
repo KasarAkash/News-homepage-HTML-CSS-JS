@@ -5,13 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <title>Frontend Mentor | News homepage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="mainContent" class="mainContent">
-      <div class="navbar">
-        <img src="assets/images/logo.svg" alt="logo" />
-        <ul class="navItems">
+    <div class="webDisplay">
+      <div id="mainContent" class="mainContent">
+        <div class="navbar">
+          <img src="assets/images/logo.svg" alt="logo" />
+          <ul class="navItems">
+            <li class="navLinks">Home</li>
+            <li class="navLinks">New</li>
+            <li class="navLinks">Popular</li>
+            <li class="navLinks">Trending</li>
+            <li class="navLinks">Categories</li>
+          </ul>
+          <i class="ri-menu-2-line menuBar"></i>
+        </div>
+
+        <div class="contentPage">
+          <div class="heroContent">
+            <img
+              class="mobileImage"
+              src="assets/images/image-web-3-mobile.jpg"
+              alt=""
+            />
+            <img
+              class="desktopImage"
+              src="assets/images/image-web-3-desktop.jpg"
+              alt="web3"
+            />
+            <div class="heroTitle">
+              <h1 class="title">The Bright Future of Web 3.0?</h1>
+              <div class="heroDetails">
+                <p class="details">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <div class="readMoreBtn">Read more</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sideContent">
+            <h1 class="sideContentTitle">New</h1>
+            <div class="sideContentTile">
+              <h2 class="sideContentTileTitle">Hydrogen VS Electric Cars</h2>
+              <p class="sideContentTileDetails">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+
+            <div class="sideContentTile">
+              <h2 class="sideContentTileTitle">The Downsides of AI Artistry</h2>
+              <p class="sideContentTileDetails">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+
+            <div class="sideContentTile">
+              <h2 class="sideContentTileTitle">Is VC Funding Drying Up?</h2>
+              <p class="sideContentTileDetails">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewMoreContent">
+          <div class="viewMoreCard">
+            <img src="assets/images/image-retro-pcs.jpg" alt="" />
+            <div class="viewMoreCardDetails">
+              <h2>01</h2>
+              <h3>Reviving Retro PCs</h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+
+          <div class="viewMoreCard">
+            <img src="assets/images/image-top-laptops.jpg" alt="" />
+            <div class="viewMoreCardDetails">
+              <h2>02</h2>
+              <h3>Top 10 Laptops of 2022</h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+
+          <div class="viewMoreCard">
+            <img src="assets/images/image-gaming-growth.jpg" alt="" />
+            <div class="viewMoreCardDetails">
+              <h2>03</h2>
+              <h3>The Growth of Gaming</h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadowLayer"></div>
+
+      <div class="sideMenuSection">
+        <i class="ri-close-line closeBtn"></i>
+        <ul>
           <li class="navLinks">Home</li>
           <li class="navLinks">New</li>
           <li class="navLinks">Popular</li>
@@ -19,77 +120,8 @@
           <li class="navLinks">Categories</li>
         </ul>
       </div>
-
-      <div class="contentPage">
-        <div class="heroContent">
-          <img src="assets/images/image-web-3-desktop.jpg" alt="web3" />
-          <div class="heroTitle">
-            <h1 class="title">The Bright Future of Web 3.0?</h1>
-            <div class="heroDetails">
-              <p class="details">
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-              <div class="readMoreBtn">Read more</div>
-            </div>
-          </div>
-        </div>
-        <div class="sideContent">
-          <h1 class="sideContentTitle">New</h1>
-          <div class="sideContentTile">
-            <h2 class="sideContentTileTitle">Hydrogen VS Electric Cars</h2>
-            <p class="sideContentTileDetails">
-              Will hydrogen-fueled cars ever catch up to EVs?
-            </p>
-          </div>
-
-          <div class="sideContentTile">
-            <h2 class="sideContentTileTitle">The Downsides of AI Artistry</h2>
-            <p class="sideContentTileDetails">
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </div>
-
-          <div class="sideContentTile">
-            <h2 class="sideContentTileTitle">Is VC Funding Drying Up?</h2>
-            <p class="sideContentTileDetails">
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="viewMoreContent">
-        <div class="viewMoreCard">
-          <img src="assets/images/image-retro-pcs.jpg" alt="" />
-          <div class="viewMoreCardDetails">
-            <h2>01</h2>
-            <h3>Reviving Retro PCs</h3>
-            <p>What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </div>
-
-        <div class="viewMoreCard">
-          <img src="assets/images/image-top-laptops.jpg" alt="" />
-          <div class="viewMoreCardDetails">
-            <h2>02</h2>
-            <h3>Top 10 Laptops of 2022</h3>
-            <p>Our best picks for various needs and budgets.</p>
-          </div>
-        </div>
-
-        <div class="viewMoreCard">
-          <img src="assets/images/image-gaming-growth.jpg" alt="" />
-          <div class="viewMoreCardDetails">
-            <h2>03</h2>
-            <h3>The Growth of Gaming</h3>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-          </div>
-        </div>
-      </div>
     </div>
+
+    <script src="main.js"></script>
   </body>
 </html>

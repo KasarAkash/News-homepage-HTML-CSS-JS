@@ -46,11 +46,15 @@ p {
     margin: 2rem 0;
     justify-content: space-between;
   }
-  .navbar ul {
+
+  ul {
     list-style: none;
   }
   .navItems {
     gap: 2rem;
+  }
+  .menuBar {
+    display: none;
   }
 
   .contentPage {
@@ -60,7 +64,6 @@ p {
     gap: 2rem;
   }
   .heroContent img {
-    height: 100%;
     width: 100%;
     object-fit: contain;
   }
@@ -116,11 +119,11 @@ p {
     color: var(--Dark-grayish-blue);
   }
 
-  .viewMoreContent,
   .viewMoreCard {
     display: flex;
   }
   .viewMoreContent {
+    display: flex;
     margin: 10rem 0;
     gap: 2rem;
     justify-content: flex-start;
@@ -152,7 +155,107 @@ p {
     font-size: 1rem;
     color: var(--Dark-grayish-blue);
   }
+  .mobileImage,
+  .sideMenuSection {
+    display: none;
+  }
+
+  .navLinks:hover {
+    cursor: pointer;
+    transition: 300ms;
+    color: var(--Soft-red);
+  }
+  .readMoreBtn:hover {
+    cursor: pointer;
+    transition: 300ms;
+    background-color: var(--Very-dark-blue);
+  }
+  .sideContentTileTitle:hover {
+    cursor: pointer;
+    transition: 300ms;
+    color: var(--Soft-orange);
+  }
+  .viewMoreCardDetails h3:hover {
+    cursor: pointer;
+    transition: 300ms;
+    color: var(--Soft-red);
+  }
 }
 
 @media (max-width: 375px) {
+  .navItems {
+    display: none;
+  }
+  .menuBar {
+    display: block;
+    font-size: 2rem;
+  }
+  .mainContent {
+    width: 100vw;
+    padding: 1rem;
+  }
+  .mobileImage {
+    display: block;
+  }
+  .desktopImage {
+    display: none;
+  }
+  .contentPage {
+    flex-direction: column;
+  }
+  .heroContent {
+    width: 100%;
+  }
+  .heroTitle {
+    gap: 0;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 3rem;
+  }
+
+  .viewMoreContent {
+    margin-top: 52rem;
+    flex-direction: column;
+  }
+
+  .webDisplay {
+    position: relative;
+  }
+
+  .sideMenuSection {
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: none;
+    z-index: 99;
+    height: 100vh;
+    width: 65vw;
+    background-color: var(--Off-white);
+  }
+  .closeBtn {
+    top: 38px;
+    right: 10px;
+    font-size: 3rem;
+    position: absolute;
+  }
+  .shadowLayer {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+    z-index: 50;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .sideMenuSection ul {
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    font-size: 1.5rem;
+  }
+  .sideMenuSection ul li {
+    padding: 1rem 0;
+  }
 }
