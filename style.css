@@ -183,7 +183,7 @@ p {
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 375px) and (max-width: 500px) {
   .navItems {
     display: none;
   }
